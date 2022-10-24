@@ -1,0 +1,25 @@
+Use this file to describe the changes necessary to use Stack to add
+Undo functionality to your J2048 game
+
+StoredBoard:
+How does it store the J2048 Board?
+Stores a 2d int Array as an instance variable in the StoredBoard class
+
+How does it store the J2048 score?
+Stores a int instance variable named "score" in the StoredBoard class
+
+Changes required to the J2048View class?
+Went over every method and replaced the instance variables of board and score to a StoredBoard. Then replaced the instances of the board and score variables to StoredBoard getter methods.
+
+
+Changes required to the J2048Model class?
+Went over every method and replaced the instance variables of board and score to a StoredBoard. Then replaced the instances of the board and score variables to StoredBoard getter methods.
+
+
+Changes required to the J2048Controller class?
+Went over every method and replaced the instance variables of board to a StoredBoard. Then replaced the instances of the board variables to StoredBoard getter methods.
+
+Extra Planning: Create MenloStackBoard class that is able to take in an array of StoredBoard
+Extra Planning: In J2048Controller class add an instnace of MenloStackBoard called undoStack and implement it
+Extra Planning: In StoredBoard create multiple classes that can be called in Controller, View, and Model in order to access and change the StoredBoard instance variables.
+
